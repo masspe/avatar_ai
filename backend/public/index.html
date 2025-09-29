@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar AI Prototype</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="avatar-pane">
+        <div id="avatar-canvas" aria-label="Avatar 3D" role="img"></div>
+      </section>
+      <section class="chat-pane">
+        <header>
+          <h1>Assistente Virtuale</h1>
+          <p>Scrivi un messaggio per parlare con l'assistente.</p>
+        </header>
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <form id="chat-form" autocomplete="off">
+          <label class="sr-only" for="message-input">Messaggio</label>
+          <input
+            id="message-input"
+            name="message"
+            type="text"
+            placeholder="Scrivi qui..."
+            required
+          />
+          <button type="submit">Invia</button>
+        </form>
+      </section>
+    </main>
+    <template id="message-template">
+      <article class="message">
+        <span class="role"></span>
+        <p class="content"></p>
+      </article>
+    </template>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
