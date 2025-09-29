@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "name": "avatar_ai",
+  "description": "Assistente con backend Express e front-end vanilla JS in hosting statico.",
+  "install": [
+    {
+      "command": "npm install",
+      "working_directory": "backend"
+    }
+  ],
+  "start": {
+    "command": "npm start",
+    "working_directory": "backend"
+  }
+}
